@@ -1,4 +1,3 @@
-
 // task 1
 function completeCodeLine() {
   let x = 1;
@@ -16,7 +15,7 @@ function completeCodeLine() {
   console.log(typeof res2); // "string"
 
   let alter = x < y;
-  alterRes2 = `${alter}2`;
+  let alterRes2 = `${alter}2`;
   console.log(alterRes2); // "true2"
   console.log(typeof alterRes2); // "string"
 
@@ -94,7 +93,6 @@ function isAdultCheck() {
   } else {
     alert(`You're too young, enjoy :)`);
   }
-
 }
 
 // task 6
