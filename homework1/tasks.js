@@ -39,7 +39,7 @@ function multiTypeObject() {
 
 // task 5
 function isAdultCheck() {
-  let isAdult = confirm('Please confirm you are adult. Type Yes or No');
+  let isAdult = confirm('Please confirm you are adult');
   console.log(isAdult ? 'User is adult' : 'User is not adult');
 }
 
@@ -92,7 +92,7 @@ function variablesDeclaration() {
 
 // task 7
 function userInfoPropmpt() {
-  let login = prompt('Pleasea enter your login below:');
+  let login = prompt('Please enter your login below:');
   let password = prompt('Please provide your fake password below:');
   let email = prompt('Please provide your email below:');
 
