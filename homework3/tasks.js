@@ -130,8 +130,26 @@ function findUniqueSet() { // via Set constructor
 }
 
 // task 7
+function returnLastElementsInArray() {
+  let userInput = prompt('Please enter array elements values, separated by comma:');
+  if (userInput === null || userInput === '') return alert('Please restart and try again with valid input');
 
-
+  let numberOfElements = Number(prompt('Please enter number of last elements to return:'));
+  if (isNaN(numberOfElements)) {
+    return alert('Please restart and try again with number value');
+  } else if (numberOfElements = '') {
+    numberOfElements = 1;
+  }
+  let userArray = userInput.split(',');
+  let slicedArray = userArray.slice(-numberOfElements);                           
+  
+  console.log(`
+   Requested number of elements to be shown: ${numberOfElements};                  
+   Output: ${slicedArray}
+   Entered array: ${userArray}
+  `);
+}
+                                                             
 // task 8
 function toUpperCase(stringLine) {
   const textArr = stringLine.split(' ');
