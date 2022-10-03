@@ -89,7 +89,7 @@ function minArgument() {
   return min;
 }
 
-function fundMinArguments() {
+function findMinArguments() {
   let randomArray = getRandomArray();
   console.log(randomArray);
   console.log(`Minimum value in ${randomArray} array is
@@ -97,7 +97,7 @@ function fundMinArguments() {
 }
 
 // task 6
-function fundUniqueLoop() { // via loop
+function findUniqueLoop() { // via loop
   const arr = getRandomArray();
   let result = false;
   for (let i = 0; i < arr.length; i++) {
@@ -120,7 +120,7 @@ function fundUniqueLoop() { // via loop
   }
 }
 
-function fundUniqueSet() { // via Set constructor
+function findUniqueSet() { // via Set constructor
   const arr = getRandomArray();
   if (arr.length !== new Set(arr).size) {
     console.log(`Array ${arr} has duplicated values`);
@@ -131,7 +131,20 @@ function fundUniqueSet() { // via Set constructor
 
 // task 7
 
+
 // task 8
-function upperCase(){ 
-  const inputString = 'i love java script';
+function toUpperCase(stringLine) {
+  const textArr = stringLine.split(' ');
+  let capitalizedArray = [];
+  for (let i = 0; i < textArr.length; i++) {
+   let capString = textArr[i].charAt(0).toUpperCase() + textArr[i].slice(1);
+   capitalizedArray.push(capString);
+  }
+  const capitalizedString = capitalizedArray.join(' ');
+  console.log(capitalizedString);
+}
+
+function capitalizer() {
+  const userInput = prompt('Please enter few words in lower case separated via spaces');
+  return toUpperCase(userInput);
 }
