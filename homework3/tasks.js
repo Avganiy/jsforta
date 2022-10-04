@@ -135,16 +135,16 @@ function returnLastElementsInArray() {
   if (userInput === null || userInput === '') return alert('Please restart and try again with valid input');
 
   let numberOfElements = Number(prompt('Please enter number of last elements to return:'));
-  if (isNaN(numberOfElements)) {
+  if (numberOfElements === null || isNaN(numberOfElements)) {
     return alert('Please restart and try again with number value');
-  } else if (numberOfElements = '') {
+  } else if (numberOfElements === '') {
     numberOfElements = 1;
   }
   let userArray = userInput.split(',');
   let slicedArray = userArray.slice(-numberOfElements);                           
   
   console.log(`
-   Requested number of elements to be shown: ${numberOfElements};                  
+   Requested number of elements to be shown: ${numberOfElements}                  
    Output: ${slicedArray}
    Entered array: ${userArray}
   `);
