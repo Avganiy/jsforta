@@ -141,22 +141,22 @@ function returnLastElementsInArray() {
     numberOfElements = 1;
   }
   let userArray = userInput.split(',');
-  let slicedArray = userArray.slice(-numberOfElements);                           
-  
+  let slicedArray = userArray.slice(-numberOfElements);
+
   console.log(`
    Requested number of elements to be shown: ${numberOfElements}                  
    Output: ${slicedArray}
    Entered array: ${userArray}
   `);
 }
-                                                             
+
 // task 8
 function toUpperCase(stringLine) {
   const textArr = stringLine.split(' ');
   let capitalizedArray = [];
   for (let i = 0; i < textArr.length; i++) {
-   let capString = textArr[i].charAt(0).toUpperCase() + textArr[i].slice(1);
-   capitalizedArray.push(capString);
+    let capString = textArr[i].charAt(0).toUpperCase() + textArr[i].slice(1);
+    capitalizedArray.push(capString);
   }
   const capitalizedString = capitalizedArray.join(' ');
   console.log(capitalizedString);
