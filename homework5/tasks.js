@@ -107,7 +107,6 @@ function generateList(arr) {
     console.log('Experience: ' + worker.showExp);
     worker.showSalaryWithExperience();
     worker.setExp = (Math.random() * 10).toFixed(1);
-    console.log(worker.showExp);
     console.log('New experience: ' + worker.showExp);
     worker.showSalaryWithExperience();
   });
