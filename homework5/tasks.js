@@ -164,15 +164,30 @@ class Circle extends GeometricFigure {
     this.r = r;
   }
   getArea() {
-    return Math.round(Math.PI * Math.pow(this.r, 2));
+    return Math.PI * Math.pow(this.r, 2);
   }
 }
 
-function handleFigures() {
-  const arr = [new Triangle(4, 5), new Square(7), new Circle(5)];
-  arr.forEach(figure => {
-    console.log(`Geometric figure: ${figure.toString()} - area: ${figure.getArea()}`);
-  })
+class FakeObject {
+  toString() {
+    return Object.getPrototypeOf(this).constructor.name;
+  }
 }
 
-const figures = [new Triangle(4, 5), new Square(7), new Circle(5)];
+function handleFigures(arr) {
+  let totalArea = 0;
+  arr.forEach(figure => {
+    if (figure instanceof GeometricFigure) {
+      console.log(`Geometric figure: ${figure.toString()} - area: ${figure.getArea()}`);
+      totalArea += figure.getArea();
+    } else {
+      console.log(`${figure.toString()} is not a GeometricFigure`);
+    }
+  });
+  console.log(`${totalArea} // total area`);
+}
+
+function executeFigures() {
+  const figures = [new Triangle(4, 5), new Square(7), new Circle(5), new FakeObject()];
+  handleFigures(figures);
+}
