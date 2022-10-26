@@ -52,7 +52,6 @@ function makeMagic() {
   document.querySelector('span').style.visibility = 'hidden'; // hidden element
 }
 
-
 // tasks 6
 function getUserInput() {
   document.querySelector('#input1').value = prompt('Enter values for input 1');
