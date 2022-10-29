@@ -14,15 +14,15 @@ function changeSource() {
 
 // task 3
 function listAllDivs() {
-  let divsArr = document.querySelector('#text').querySelectorAll('p');
-  for (let i = 0; i < divsArr.length; i++) {
+  let divsArr = document.querySelectorAll('#text p');
+  for (let i = 0; i < divsArr.length; i += 1) {
     console.log(`Selector text ${[i]}: ${divsArr[i].textContent}`);
   }
 }
 
 // task 4
 function showList1() {
-  let divsArr = document.querySelector('#list').querySelectorAll('li');
+  let divsArr = document.querySelectorAll('#list li');
   alert(`${divsArr[0].innerHTML}, ${divsArr[4].innerHTML}, ${divsArr[1].innerHTML}, ${divsArr[3].innerHTML}, ${divsArr[2].innerHTML}`);
 }
 
@@ -35,7 +35,7 @@ function showList2() {
 function makeMagic() {
   document.querySelector('#styledheader').style.backgroundColor = '#90EE90'; // backgound color
 
-  let listDiv = document.querySelector('#myDiv').querySelectorAll('p'); // list styling
+  let listDiv = document.querySelectorAll('#myDiv p'); // list styling
   listDiv[0].style.fontWeight = 'bold';
   listDiv[1].style.color = 'red';
   listDiv[2].style.textDecoration = 'underline';

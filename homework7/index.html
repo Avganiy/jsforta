@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Homework 7</h1>
+    <!--task 1-->
+    <h2>Task 1</h2>
+    <button onclick="createWindow()">Demo task 1</button>
+    <!--task 2-->
+    <h2>Task 2</h2>
+    <p id="text">I am learning JavaScript events!</p>
+    <div>
+      <button onclick="changeCss()">Demo task 2 - Change style!</button>
+    </div>
+    <!--task 3-->
+    <h2>Task 3</h2>
+    <button id="makeBlue">Click to make the page blue.</button>
+    <button id="makePink">Double-click to make the page pink.</button>
+    <button id="makeBrown">Click and hold to make the page brown.</button>
+    <a id="makeYellow" href="url">Hover to make page yellow</a>
+    <!--task 4-->
+    <h2>Task 4</h2>
+    <div>
+      <select id="usersList">
+        <option>Peter</option>
+        <option>John</option>
+        <option>Alise</option>
+        <option>Alex</option>
+        <option>Iren</option>
+      </select>
+      <button onclick="deleteOption()">Delete option</button>
+    </div>
+    <!--task 5-->
+    <h2>Task 5</h2>
+    <button id="eventButton" onclick="mouseEvents()">
+      Demo task 5 - Click me!
+    </button>
+    <div id="textArea"></div>
+    <!--task 6-->
+    <h2>Task 6</h2>
+    <p>Click button and start resizing</p>
+    <button onclick="trackWindowDimensions()">Demo task 6</button>
+    <p>Width: <span id="windowWidth"></span></p>
+    <p>Height: <span id="windowHeight"></span></p>
+     <!--task 7-->
+     <h2>Task 7</h2>
+     <p>Click button to start demo</p>
+     <button onclick="populateCitiesList(); updateInfoLine()">Demo task 7</button>
+     <br></br>
+     <select name="country" id="countries">
+        <option value="ger">Germany</option>
+        <option value="usa">USA</option>
+        <option value="ukr">Ukraine</option>
+    </select>      
+    <select name="cities" id="cities"></select>
+    <p id="output"></p>
+    <script src="tasks.js"></script>
+  </body>
+</html>
