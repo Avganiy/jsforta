@@ -1,7 +1,7 @@
 // task 1
 function checkForUpperCase(str) {
-  if (str[0].toUpperCase() === str[0]) {
-    // if (/^A-Z]/.test(str)) {
+  //if (str[0].toUpperCase() === str[0]) {
+  if (/^[A-Z]/.test(str)) {
     return 'String starts with upper case character';
   } else {
     return 'String does not start with upper case character';
@@ -72,7 +72,7 @@ function validateEmails() {
 
 // task 7
 function checkLogin(login) {
-  const checkCondition = /^\D{1}[(A-Z0-9)(\.)?(A-Z0-9)?]{1,9}$/i; // first can't be a number, then any alphanumeric, including dot, ignore case
+  const checkCondition = /^\D{1}[(A-Z0-9)+(\.)?(A-Z0-9)+?]{1,9}$/i; // first can't be a number, then any alphanumeric, including dot, ignore case
   const numberExtractor = /\d+\.?\d?/g;
   if (checkCondition.test(login)) {
     return `Login is valid.
