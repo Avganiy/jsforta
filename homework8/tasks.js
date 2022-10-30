@@ -69,7 +69,6 @@ function validateEmails() {
   console.log(checkEmailFormat('my_ma--il@gmail.com'));
 }
 
-
 // task 7
 function checkLogin(login) {
   const checkCondition = /^\D{1}[(A-Z0-9)+(\.)?(A-Z0-9)+?]{1,9}$/i; // first can't be a number, then any alphanumeric, including dot, ignore case
