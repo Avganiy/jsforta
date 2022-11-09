@@ -2,8 +2,8 @@
 const getDate = () => {
   return new Date();
 }
+
 const greetUserByDayTime = (userName, currentDate) => {
-  //const currentDate = getDate();
   const currentHour = currentDate.getHours();
 
   const morningStart = 5;
