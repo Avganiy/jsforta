@@ -3,7 +3,7 @@ function addAttr() {
    $('a[href^="https://"]').attr('target', '_blank');
 }
 
-// taks 2
+// task 2
 function editClass() {
    $('h2.head').css('background-color', 'green');
    $('h2.head .inner').css('fontSize', '35px');
