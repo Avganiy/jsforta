@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Homework 9</h1>
     <!--task 1-->
     <h2>Task 1</h2>
-    <button onclick="calcRectangleArea()">Demo task 1</button>
+    <a href="https://www.google.com/">Google URL</a>
+    <button onclick="addAttr()">Demo task 1</button>
     <!--task 2-->
     <h2>Task 2</h2>
-    <button onclick="checkAge()">Demo task 2</button>
+    <h2 class="head">header1</h2>
+    <h2 class="head">header2 <span class="inner">inner elem1</span></h2>
+    <h2>header3</h2>
+    <h2 class="head">header4<span>inner elem2</span></h2>
+    <h2>header5</h2>
+    <button onclick="editClass()">Demo task 2</button>
     <!--task 3-->
     <h2>Task 3</h2>
-    <button onclick="showMonthName()">Demo task 3</button>
+    <h3>header1</h3>
+    <div>text1</div>
+    <h3>header2</h3>
+    <div>text2</div>
+    <br></br>
+    <button onclick="changeOrder()">Demo task 3</button>
     <!--task 4-->
     <h2>Task 4</h2>
-    <button onclick="showValidUsers()">Demo task 4</button>
+    <form id="chbForm">
+      <input type="checkbox" id="oak" name="oak" value="Oak" />
+      <label for="oak"> Oak</label><br />
+      <input type="checkbox" id="aloe" name="aloe" value="Aloe" />
+      <label for="aloe"> Aloe</label><br />
+      <input type="checkbox" id="cactus" name="cactus" value="Cactus" />
+      <label for="cactus"> Cactus</label><br />
+      <input type="checkbox" id="yucca" name="yucca" value="Yucca" />
+      <label for="Yucca"> Yucca</label><br />
+      <input type="checkbox" id="palm" name="palm" value="Palm" />
+      <label for="palm"> Palm</label><br />
+      <input type="checkbox" id="dracaena" name="dracaena" value="Dracaena" />
+      <label for="dracaena"> Dracaena</label><br />
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="tasks.js"></script>
-</body>
+  </body>
 </html>
